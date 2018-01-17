@@ -55,7 +55,7 @@ circle.on('mouseout', function(e){
 // add geoJSON feature to map
 var myStyle = {"color": "#ff7800"}
 
-$.getJSON("chicago.geojson", function(json) {
+$.getJSON("centroids.geojson", function(json) {
   var geojsonfeature = json // this will show the info it in firebug console
   L.geoJSON(geojsonfeature, {
     style: myStyle
